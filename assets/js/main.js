@@ -14,4 +14,4 @@ function updateHeroBackground() {
 
 updateHeroBackground();
 
-setInterval(updateHeroBackground, 6000);
+setInterval(updateHeroBackground, 1000);

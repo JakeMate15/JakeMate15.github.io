@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Erik</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="hero-container">
+            <div class="hero">
+                <div class="bar">
+                    <div class="logo">
+                        <a href="index.html"><p>JM14</p></a>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="index.html">Acerca de Mí</a></li>
+                            <li><a href="index.html">Hobbies</a></li>
+                            <li><a href="vacaciones.html">Vacaciones</a></li>
+                            <li><a href="ejercicios.html">Ejercicios</a></li>
+                            <li><a href="cosie.html">Solicitud Cosie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-ipn">
+            <img src="assets/img/logo-ipn.png" alt="Logo IPN" />
+        </div>
+
+        <form action="#" method="post">
+            <h1>Formato de Solicitud (COSIE-01)</h1>
+            
+            <!-- Datos Personales del Solicitante -->
+            <fieldset>
+                <legend>Datos Personales del Solicitante</legend>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                
+                <label for="nombres">Nombre(s):</label>
+                <input type="text" id="nombres" name="nombres" required>
+                
+                <label for="noBoleta">No. Boleta:</label>
+                <input type="text" id="noBoleta" name="noBoleta" required>
+                
+                <label for="unidadAcademica">Unidad Académica:</label>
+                <input type="text" id="unidadAcademica" name="unidadAcademica" required>
+                
+                <label for="programaAcademico">Programa Académico:</label>
+                <input type="text" id="programaAcademico" name="programaAcademico" required>
+                
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                
+                <label for="estadoCivil">Estado Civil:</label>
+                <select id="estadoCivil" name="estadoCivil">
+                    <option value="soltero">Soltero/a</option>
+                    <option value="casado">Casado/a</option>
+                    <!-- Agregar más estados civiles según sea necesario -->
+                </select>
+                
+                <label for="domicilio">Domicilio Particular:</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+                
+                <!-- Información Solicitada con Motivos Estadísticos -->
+                <label for="dependientesEconomicos">Tiene Dependientes Económicos (Cónyuge):</label>
+                <input type="radio" id="dependientesSi" name="dependientesEconomicos" value="si">
+                <label for="dependientesSi">Sí</label>
+                <input type="radio" id="dependientesNo" name="dependientesEconomicos" value="no">
+                <label for="dependientesNo">No</label>
+                
+                <label for="dependientesMenores">Tiene Dependientes Económicos Menores de Edad (Hijos/as):</label>
+                <input type="radio" id="dependientesMenoresSi" name="dependientesMenores" value="si">
+                <label for="dependientesMenoresSi">Sí</label>
+                <input type="radio" id="dependientesMenoresNo" name="dependientesMenores" value="no">
+                <label for="dependientesMenoresNo">No</label>
+                
+                <!-- Más campos según el PDF -->
+            </fieldset>
+            
+            <!-- Situación Escolar Actual -->
+            <fieldset>
+                <legend>Información Solicitada con Motivos Estadísticos</legend>
+                <div class="form-group">
+                    <label>Tiene Dependientes Económicos (Cónyuge):</label>
+                    <input type="radio" id="dependientesSi" name="dependientesEconomicos" value="si"><label for="dependientesSi">Sí</label>
+                    <input type="radio" id="dependientesNo" name="dependientesEconomicos" value="no"><label for="dependientesNo">No</label>
+                </div>
+                <div class="form-group">
+                    <label>Tiene Dependientes Económicos Menores de Edad (Hijos o Hijas):</label>
+                    <input type="radio" id="dependientesMenoresSi" name="dependientesMenores" value="si"><label for="dependientesMenoresSi">Sí</label>
+                    <input type="radio" id="dependientesMenoresNo" name="dependientesMenores" value="no"><label for="dependientesMenoresNo">No</label>
+                </div>
+                <div class="form-group">
+                    <label>Tuvo Embarazo:</label>
+                    <input type="radio" id="embarazoPropio" name="embarazo" value="propio"><label for="embarazoPropio">Propio</label>
+                    <input type="radio" id="embarazoPareja" name="embarazo" value="pareja"><label for="embarazoPareja">De la Pareja</label>
+                    <input type="radio" id="embarazoNoContestar" name="embarazo" value="noContestar"><label for="embarazoNoContestar">No deseo contestar</label>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono o Celular:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="correoElectronico">Correo Electrónico:</label>
+                    <input type="email" id="correoElectronico" name="correoElectronico" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaIngreso">Fecha de Ingreso (Periodo Escolar en que ingresó al Nivel Educativo Actual):</label>
+                    <input type="text" id="fechaIngreso" name="fechaIngreso" required>
+                </div>
+                <div class="form-group">
+                    <label for="ultimoSemestre">Último Semestre/Nivel en que estuvo inscrito:</label>
+                    <input type="text" id="ultimoSemestre" name="ultimoSemestre" required>
+                </div>
+                <div class="form-group">
+                    <label>Fecha del Último Dictamen de Situación Escolar:</label>
+                    <input type="date" id="fechaUltimoDictamen" name="fechaUltimoDictamen">
+                </div>
+                <div class="form-group">
+                    <label for="tipoUltimoDictamen">COSIE del:</label>
+                    <select id="tipoUltimoDictamen" name="tipoUltimoDictamen">
+                        <option value="ctce">CTCE</option>
+                        <option value="cgc">CGC</option>
+                    </select>
+                </div>
+
+            </fieldset>            
+            
+            <fieldset>
+                <legend>Situación Escolar Actual</legend>
+                <div class="form-group">
+                    <label>Adeudos de Unidades de Aprendizaje Desfasadas (Art. 98 RI y 52 RGE):</label>
+                    <input type="checkbox" id="adeudosUA" name="situacionEscolar" value="adeudosUA"><label for="adeudosUA">Sí</label>
+                </div>
+                <div class="form-group">
+                    <label>No haber solicitado reinscripción en el periodo escolar anterior (Art. 57 RGE):</label>
+                    <input type="checkbox" id="noReinscripcion" name="situacionEscolar" value="noReinscripcion"><label for="noReinscripcion">Sí</label>
+                </div>
+                <div class="form-group">
+                    <label>Reconocimiento de Calificaciones Acreditadas:</label>
+                    <input type="checkbox" id="reconocimientoCalificaciones" name="situacionEscolar" value="reconocimientoCalificaciones"><label for="reconocimientoCalificaciones">Sí</label>
+                </div>
+                <div class="form-group">
+                    <label>Ampliación de Tiempo para la Conclusión de Estudios (Art. 49 RGE):</label>
+                    <input type="checkbox" id="ampliacionTiempo" name="situacionEscolar" value="ampliacionTiempo"><label for="ampliacionTiempo">Sí</label>
+                </div>
+                <div class="form-group">
+                    <label>Incumplimiento de Dictamen de Situación Escolar Anterior:</label>
+                    <input type="checkbox" id="incumplimientoDictamen" name="situacionEscolar" value="incumplimientoDictamen"><label for="incumplimientoDictamen">Sí</label>
+                </div>
+                <div class="form-group">
+                    <label for="otrasSituaciones">Otras (Especifique):</label>
+                    <input type="text" id="otrasSituaciones" name="otrasSituaciones">
+                </div>
+            </fieldset>
+            
+            
+            <fieldset>
+                <legend>Detalles de la Petición y Documentación</legend>
+                
+                <!-- Explicación de la Petición -->
+                <div class="form-group">
+                    <label for="explicacionPeticion">Explique de Forma Concreta su Petición:</label>
+                    <textarea id="explicacionPeticion" name="explicacionPeticion" rows="4" required></textarea>
+                </div>
+                
+                <!-- Causas de la Situación Escolar Actual -->
+                <div class="form-group">
+                    <label>Marque con una “X” la(s) causa(s) que originó que se encuentre en su situación escolar actual:</label>
+                    <div>
+                        <input type="checkbox" id="causaSalud" name="causa" value="salud"><label for="causaSalud">Salud</label>
+                        <input type="checkbox" id="causaEconomica" name="causa" value="economica"><label for="causaEconomica">Económica Familiar</label>
+                        <input type="checkbox" id="causaLegal" name="causa" value="legal"><label for="causaLegal">Legal</label>
+                        <input type="checkbox" id="causaLaboral" name="causa" value="laboral"><label for="causaLaboral">Laboral</label>
+                        <input type="checkbox" id="causaAdministrativa" name="causa" value="administrativa"><label for="causaAdministrativa">Administrativa</label>
+                        <input type="text" id="otraCausa" name="otraCausa" placeholder="Otras (especifique)">
+                    </div>
+                </div>
+                
+                <!-- Documentación Anexa -->
+                <div class="form-group">
+                    <label>Marque la documentación que anexa para analizar su situación académica:</label>
+                    <div>
+                        <input type="checkbox" id="boletaGlobal" name="documentacion" value="boletaGlobal"><label for="boletaGlobal">Boleta Global de Calificaciones Certificada</label>
+                        <input type="checkbox" id="cartaMotivos" name="documentacion" value="cartaMotivos"><label for="cartaMotivos">Carta de Exposición de Motivos</label>
+                        <input type="checkbox" id="dictamenesAnteriores" name="documentacion" value="dictamenesAnteriores"><label for="dictamenesAnteriores">Dictámenes Anteriores</label>
+                        <input type="checkbox" id="bajasAnteriores" name="documentacion" value="bajasAnteriores"><label for="bajasAnteriores">Bajas Anteriores</label>
+                        <input type="checkbox" id="documentosProbatorios" name="documentacion" value="documentosProbatorios"><label for="documentosProbatorios">Documentos Probatorios</label>
+                        <input type="text" id="otrosDocumentos" name="otrosDocumentos" placeholder="Otros">
+                    </div>
+                </div>
+            </fieldset>
+            
+            
+            <fieldset>
+                <legend>Autorizaciones y Firma</legend>
+                
+                <!-- Autorización para Comunicaciones -->
+                <div class="form-group">
+                    <label for="correoAutorizado">Autorizo a recibir las comunicaciones relativas a esta solicitud en el siguiente correo electrónico:</label>
+                    <input type="email" id="correoAutorizado" name="correoAutorizado" required>
+                </div>
+                
+                <!-- Firma del Alumno -->
+                <div class="form-group">
+                    <label for="nombreAlumno">Nombre del Alumno (como firma):</label>
+                    <input type="text" id="nombreAlumno" name="nombreAlumno" required>
+                </div>
+                
+                <!-- Recepción del Expediente por la Unidad Académica -->
+                <div class="form-group">
+                    <label for="nombreRecepcion">Nombre, Firma y Fecha de Recepción del Expediente por la Unidad Académica:</label>
+                    <input type="text" id="nombreRecepcion" name="nombreRecepcion" placeholder="Nombre" required>
+                    <!-- La fecha de recepción y la firma se gestionarán internamente o en persona -->
+                </div>
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Aviso de Privacidad</legend>
+                <p>Los datos contenidos en esta solicitud están en posesión de la Comisión de Situación Escolar del Consejo General Consultivo del Instituto Politécnico Nacional y tendrán el carácter de información confidencial en términos de lo dispuesto por los artículos 18 y 19 de la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental; por lo cual no podrán ser difundidos en forma alguna y deberá evitarse cualquier manejo de los mismos que contravenga lo dispuesto en los artículos 20, 21 y 24 de la citada ley y en caso de incumplimiento será sancionado conforme a lo establecido en la propia ley y en la normatividad institucional vigente.</p>
+            </fieldset>
+            
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    
+    
+    
+    </div>
+
+</body>
+</html>

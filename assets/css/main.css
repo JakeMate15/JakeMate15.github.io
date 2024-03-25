@@ -7,6 +7,7 @@
 @import "./sections.css";
 @import "./text.css";
 @import "./chips.css";
+@import "./cosie.css";
 
 html {
     font-size: 16px;

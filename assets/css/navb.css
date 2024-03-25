@@ -1,9 +1,13 @@
 .barb {
     width: 100%;
     height: 91px;
-    position: absolute;
     top: 50;
     background-color: black;
+    margin-bottom: 20px;
+}
+
+.main {
+    padding-top: 0px;
 }
 
 .logo p {

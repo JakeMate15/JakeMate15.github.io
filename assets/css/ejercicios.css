@@ -1,0 +1,28 @@
+button {
+    background-color: black; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano al pasar por encima */
+    margin: 5px; /* Margen entre botones */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilos para el contenedor de resultados */
+#resultado {
+    padding: 20px; /* Espaciado interno */
+    background-color: #f2f2f2; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio por encima del contenedor */
+    min-height: 100px; /* Altura mínima */
+    display: flex; /* Usa flexbox para alinear contenido */
+    align-items: center; /* Centra contenido verticalmente */
+    justify-content: center; /* Centra contenido horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+}

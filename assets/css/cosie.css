@@ -3,36 +3,35 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f0f0f0;
-    color: #333; /* Color de texto general para mejorar la legibilidad */
+    color: #333;
 }
 
-/* Mantén el estilo del logo que ya tenías, ajustando el comentario sobre el tamaño si has incluido un logo real */
 .logo-ipn img {
+    margin-top: 91px;
     display: block;
     margin: 0 auto 20px auto;
-    width: 150px; /* Ajusta esto según el tamaño deseado para el logo */
-    height: auto; /* Mantiene la proporción del logo */
+    width: 150px;
+    height: auto;
 }
-
 
 form {
     background-color: #fff;
     padding: 20px;
-    margin: 0 auto; /* Centra el formulario en la página */
-    max-width: 800px; /* Ajusta esto para controlar la anchura máxima del formulario */
+    margin: 0 auto;
+    max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 fieldset {
-    border: 1px solid #ddd; /* Hace que los fieldset sean sutiles */
+    border: 1px solid #ddd;
     padding: 10px;
     margin-top: 20px;
     border-radius: 4px;
 }
 
 legend {
-    color: #444; /* Color del texto para los títulos de cada sección */
+    color: #444;
     padding: 0 5px;
     background-color: #f8f8f8;
     border-radius: 4px;
@@ -41,7 +40,7 @@ legend {
 input[type=text], input[type=date], input[type=tel], input[type=email], select, textarea {
     width: 100%;
     padding: 10px;
-    margin: 8px 0 20px 0; /* Aumenta el margen inferior para mayor espaciado */
+    margin: 8px 0 20px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -49,49 +48,48 @@ input[type=text], input[type=date], input[type=tel], input[type=email], select, 
 }
 
 input[type=radio] {
-    margin-right: 5px; /* Espacio a la derecha de cada input para separarlo de su etiqueta */
+    margin-right: 5px;
 }
 
 input[type=checkbox] + label {
-    margin-left: 5px; /* Espacio a la izquierda de la etiqueta */
+    margin-left: 5px;
 }
 
 input[type=submit] {
-    width: auto; /* Cambia esto a auto para que el botón no se estire */
-    padding: 10px 20px; /* Ajuste de padding para botones más estilizados */
-    background-color: #007bff; /* Color azul estándar para botón de envío */
+    width: auto;
+    padding: 10px 20px;
+    background-color: #007bff;
     color: white;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    display: block; /* Hace que el botón de envío sea un bloque para centrarlo fácilmente */
-    margin: 20px auto; /* Centra el botón en la página */
+    display: block;
+    margin: 20px auto;
 }
 
 input[type=submit]:hover {
-    background-color: #0056b3; /* Oscurece el botón al pasar el mouse para efecto interactivo */
+    background-color: #0056b3;
 }
 
-/* Agregar estilos para enfocar elementos al interactuar con ellos */
 input[type=text]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=email]:focus, select:focus, textarea:focus {
-    border-color: #4a90e2; /* Cambia el color del borde al enfocar para mejorar la visibilidad */
-    outline: none; /* Elimina el contorno predeterminado para no distraer */
+    border-color: #4a90e2;
+    outline: none;
 }
 
 .form-group {
     display: flex;
-    justify-content: space-between; /* Separa el texto de la casilla */
-    align-items: center; /* Centra verticalmente */
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
 label {
-    margin-bottom: .5rem; /* Solo si es necesario, según tu diseño */
+    margin-bottom: .5rem;
 }
 
 label.checkbox-label {
-    margin-bottom: 0; /* Evita el espaciado extra debajo de las etiquetas de los checkboxes */
+    margin-bottom: 0;
 }
 
 .checkbox-group {

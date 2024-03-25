@@ -1,12 +1,13 @@
-.bar {
+.barb {
     width: 100%;
     height: 91px;
     position: absolute;
-    top: 0;
+    top: 50;
+    background-color: black;
 }
 
 .logo p {
-    color: var(--Material-Blue-Light);
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -18,7 +19,7 @@
 }
 
 .nav a {
-    color: var(--Material-Blue-Light);
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -39,7 +40,7 @@
     margin-inline-end: 100px;
 }
 
-.bar div {
+.barb div {
     margin-block-start: 36px;
     display: inline-block;
 }

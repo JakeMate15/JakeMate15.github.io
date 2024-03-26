@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <title>Suma 100 primeros numeros while</title>
+    </head>
+
+    <body>
+        <script type = "text/javascript">
+            var sumTotal = 0, sumPares = 0
+            var i = 100
+
+            while (i--) {
+                sumTotal += i
+                sumPares += !(i & 1)
+            }
+
+            alert("La suma total de 1 a 100 es " + sumTotal)
+            alert("La suma de los numeros pares de 1 a 100 es " + sumPares)
+        </script>
+    </body>
+</html>

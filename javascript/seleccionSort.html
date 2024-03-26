@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <title>Selection Sort</title>
+    </head>
+
+    <body>
+        <script type = "text/javascript">
+            let arr = [12, 32, 12, 534, 1, -1, 43, 231]
+            alert("El arreglo original es " + arr)
+
+            for (var i = 0; i < arr.length; i++) {
+                var mn = i
+                for (var j = i + 1; j < arr.length; j++) {
+                    if (arr[j] < arr[mn]) {
+                        mn = j
+                    }
+                }
+                var aux = arr[mn]
+                arr[mn] = arr[i]
+                arr[i] = aux
+            }
+            
+            alert("El arreglo ordenado es " + arr)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <title>Burbuja</title>
+    </head>
+
+    <body>
+        <script type = "text/javascript">
+            let arr = [12, 32, 12, 534, 1, -1, 43, 231]
+            alert("El arreglo original es " + arr)
+
+            var n = arr.length
+            for (var i = 0; i < n; i++) {
+                for (var j = 0; j < n - i - 1; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        var aux = arr[j]
+                        arr[j] = arr[j + 1]
+                        arr[j + 1] = aux
+                    }
+                }
+            }
+            
+            alert("El arreglo ordenado es " + arr)
+        </script>
+    </body>
+</html>
